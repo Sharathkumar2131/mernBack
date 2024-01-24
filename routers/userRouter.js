@@ -9,7 +9,7 @@ const userModel=require('../model/userModel');
 
 
 //post user details......
-router.post('/users/add',async(req,res)=>{
+router.post('/users',async(req,res)=>{
     try{
         const addUser=new userModel(req.body);
         console.log(req.body);
